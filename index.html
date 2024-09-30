@@ -18,6 +18,11 @@
                 <li>LYNC Portal</li>
                 <li>Request a demo</li>
             </ul>
+            <div class="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
             <button class="get-started">Get started →</button>
         </nav>
     </header>
@@ -260,6 +265,14 @@
             <p>&copy; 2023 LYNC World • Terms of Service</p>
         </footer>
     </div>
+<script>
+    const menuIcon = document.querySelector('.menu-icon');
+const navUl = document.querySelector('nav ul');
 
+menuIcon.addEventListener('click', () => {
+  menuIcon.classList.toggle('active');
+  navUl.style.display = navUl.style.display === 'block' ? 'none' : 'block';
+});
+</script>
 </body>
 </html>
